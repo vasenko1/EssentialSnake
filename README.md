@@ -1,2 +1,0 @@
-# EssentialSnake
-Classes C# Essential
