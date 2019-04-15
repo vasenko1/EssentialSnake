@@ -10,8 +10,10 @@ namespace SnakeGame
     {
         static void Main(string[] args)
         {
-
-
+            int xPosition = 45;
+            int yPosition =30;
+            
+            
         }
     }
 }
