@@ -13,6 +13,8 @@ namespace SnakeGame
             int xPosition = 45;
             int yPosition =30;
             
+            Console.SetCursorPosition(xPosition, yPosition);
+            Console.ForegroundColor = ConsoleColor.Green;
             
         }
     }
