@@ -10,9 +10,7 @@ namespace SnakeGame
     {
         static void Main(string[] args)
         {
-            int example;
-            int TRYREUSE;
-
+         
             
             int xPosition = 45;
             int yPosition =30;
