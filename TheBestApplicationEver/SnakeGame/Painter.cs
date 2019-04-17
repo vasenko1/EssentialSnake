@@ -8,7 +8,8 @@ namespace SnakeGame
 {
     class Painter
     {
-                                                                                                              
+         //постройка границ
+        
         public void BuildBoundary()
         {
 
