@@ -20,7 +20,7 @@ namespace SnakeGame
             Console.WriteLine("*");
 
             //draw
-            Painter painter = new Painter();
+            Painter painter = new Painter(30, 80);
             painter.BuildBoundary();
 
             //move

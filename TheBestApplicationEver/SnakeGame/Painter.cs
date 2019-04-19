@@ -8,28 +8,31 @@ namespace SnakeGame
 {
     class Painter
     {
-                                                                                                              
+        private int verticalAreaSize;
+        private int horizontalAreaSize;
+         //постройка границ
+
+       public Painter(int verticalAreaSize, int horizontalAreaSize)
+        {
+            this.verticalAreaSize = verticalAreaSize;
+            this.horizontalAreaSize = horizontalAreaSize;
+        }
+        
         public void BuildBoundary()
         {
+            Console.SetCursorPosition(0, 0);
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine(new string('-', horizontalAreaSize));
 
-            for (int i = 0; i < 31; i++)
+            for (int i = 0; i < verticalAreaSize + 1; i++)
             {
-                Console.ForegroundColor = ConsoleColor.Red;
                 Console.SetCursorPosition(1, i);
                 Console.Write("|");
-                Console.SetCursorPosition(80, i);
+                Console.SetCursorPosition(horizontalAreaSize, i);
                 Console.WriteLine("|");
             }
-            for (int i = 0; i < 81; i++)
-            {
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.SetCursorPosition(i,1);
-                Console.Write("-");
-                Console.SetCursorPosition(i, 30);
-                Console.WriteLine("-");
-            }
 
+            Console.WriteLine(new string('-', horizontalAreaSize + 1));
         }
-
     }
 }
