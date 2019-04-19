@@ -7,7 +7,7 @@ namespace SnakeGame
         static void Main(string[] args)
         {
             Painter painter = new Painter(20, 80);
-
+            
             Console.ReadKey();
         }
     }

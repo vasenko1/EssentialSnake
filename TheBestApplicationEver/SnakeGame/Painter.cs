@@ -35,12 +35,12 @@ namespace SnakeGame
         // отрисовка фруктов на игровом поле
         private void DrawFruits()
         {
-            if(isGoodFruitDisplayed == false)
+            if (isGoodFruitDisplayed == false)
             {
                 ShowGoodFruit(horizontalAreaSize, verticalAreaSize - 1);
             }
 
-            if(isBadFruitDisplayed == false)
+            if (isBadFruitDisplayed == false)
             {
                 ShowBadFruit(horizontalAreaSize, verticalAreaSize - 1);
             }
