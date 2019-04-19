@@ -12,20 +12,14 @@ namespace SnakeGame
         static void Main(string[] args)
         {
 
-            int xPosition = 35;
-            int yPosition = 20;
-           
-            Console.SetCursorPosition(xPosition, yPosition);
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("*");
-
+                             
             //draw
-            Painter painter = new Painter(30, 80);
+            Painter painter = new Painter(25, 60);
             painter.BuildBoundary();
 
             //move
             Control control = new Control();
-            control.Move(true, 35, 20);
+            control.Move(true, 35, 10);
             Console.ReadKey();
         }
     }
