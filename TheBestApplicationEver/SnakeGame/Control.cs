@@ -10,9 +10,9 @@ namespace SnakeGame
     {
         bool WallHit = false;
 
-       ConsoleKey move = Console.ReadKey().Key;
+        ConsoleKey move = Console.ReadKey().Key;
 
-        public void Move(bool ISGameON, int x,int y)
+        public void Move(bool ISGameON, int x, int y)
         {
             do
             {
@@ -43,7 +43,7 @@ namespace SnakeGame
                 Console.SetCursorPosition(x, y);
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("*");
-                                     
+
             } while (ISGameON);
         }
 

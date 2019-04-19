@@ -8,7 +8,6 @@ namespace SnakeGame
 {
     class Snake
     {
-        
 
     }
 }
