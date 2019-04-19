@@ -28,11 +28,11 @@ namespace SnakeGame
             {
                 Console.SetCursorPosition(1, i);
                 Console.Write("|");
-                Console.SetCursorPosition(horizontalAreaSize, i);
+                Console.SetCursorPosition(horizontalAreaSize , i);
                 Console.WriteLine("|");
             }
 
-            Console.WriteLine(new string('-', horizontalAreaSize + 1));
+            Console.WriteLine(new string('-', horizontalAreaSize+1));
         }
     }
 }
