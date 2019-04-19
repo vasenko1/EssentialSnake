@@ -9,6 +9,7 @@ namespace SnakeGame
     class Control
     {
         bool WallHit = false;
+        char head = '*';
 
        ConsoleKey move = Console.ReadKey().Key;
 
@@ -42,7 +43,7 @@ namespace SnakeGame
                 }
                 Console.SetCursorPosition(x, y);
                 Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine("*");
+                Console.WriteLine(head);
                                      
             } while (ISGameON);
         }
