@@ -7,11 +7,12 @@ using System.Threading;
 
 namespace SnakeGame
 {
-    class Control
+    class Control : Fruits
     {
         bool WallHit = false;
         char head = 'O';
         int gameSpeed = 100;
+        Random random = new Random();
 
         ConsoleKey move = Console.ReadKey().Key;
 
@@ -44,11 +45,10 @@ namespace SnakeGame
 
                 }
                 Console.SetCursorPosition(x, y);
-                Console.ForegroundColor = ConsoleColor.Green;
-
-                Console.WriteLine("*");
-
+                Console.ForegroundColor = ConsoleColor.Red;             
                 Console.WriteLine(head);
+                Console.CursorVisible = true;
+
                 WallHit = DidSnakeHitWall(x, y);
                 if (WallHit)
                 {
@@ -56,21 +56,29 @@ namespace SnakeGame
                     Console.SetCursorPosition(30, 20);
                     Console.WriteLine("Game Over");
                 }
+            
                 if (Console.KeyAvailable) move = Console.ReadKey().Key;
                 Thread.Sleep(gameSpeed);
-
+              
             } while (ISGameON);
          
         }
+
         private static bool DidSnakeHitWall(int x, int y)
         {
-            if (x == 1  || x == 60 || y == 0 || y == 26) 
+            if (x ==  0 || y == 1 || x == 81  || y == 23 ) 
             return true; return false;
         }
 
 
         //приватный метод если змейка ударилсь об границу
         //значения по координатам
+        private bool DeterminAppleEaten(int x, int y, int AppleXDem, int AppleYDem)
+        {
+            if (x == AppleXDem && y == AppleYDem)
 
+                return true; return false;
+
+        }
     }
 }
