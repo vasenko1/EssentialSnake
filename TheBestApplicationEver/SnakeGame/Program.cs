@@ -10,6 +10,7 @@ namespace SnakeGame
 
 
             Control control = new Control();
+            control.Move(true, 30, 20);
             
             Console.ReadKey();
         }
